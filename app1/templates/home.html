@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="home_data">
+ <!--<h2>{{home_data}}</h2>
+ <h2>{{home_data2}}</h2>
+{% for i in home_data2 %}
+   <ul>
+     <li>{{i}}</li>
+   </ul>
+{% endfor %}-->
+<h2>{{home_data2}}</h2>
+<h2>{{home_data2.key1}}</h2>
+
+{% for key,value in home_data2.items %}
+     <h2>{{key}} // {{value}}</h2>
+{% endfor %}
+   
+
+</div>
+
+{% endblock content %}

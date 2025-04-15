@@ -1,0 +1,38 @@
+<nav>
+    {% if electronics_nav %}
+    <div class="logo">
+        <h2>ELECTRONICS</h2>
+    </div>
+    <div class="links">
+        <a href="http://127.0.0.1:8000/">Home</a>
+        <a href="http://127.0.0.1:8000/app2/electronics">Electronic</a>
+        <a href="http://127.0.0.1:8000/app2/laptop">laptop</a>
+        <a href="http://127.0.0.1:8000/app2/mobile">mobile</a>
+        <a href="http://127.0.0.1:8000/app2/watch">watch</a>
+        <a href="http://127.0.0.1:8000/app2/web">web</a>
+    </div>
+    {% elif sports_nav %}
+    <div class="logo">
+        <h2>SPORTS</h2>
+    </div>
+    <div class="links">
+        <a href="http://127.0.0.1:8000/">Home</a>
+        <a href="http://127.0.0.1:8000/app3/sports">sports</a>
+        <a href="http://127.0.0.1:8000/app3/cricket">cricket</a>
+        <a href="http://127.0.0.1:8000/app3/mobile">football</a>
+        <a href="http://127.0.0.1:8000/app3/tennis">tennis</a>
+        <a href="http://127.0.0.1:8000/app3/badminton">badminton</a>
+    {% else %}
+    <div class="logo">
+        <h2>SHOP</h2>
+    </div>
+
+<div class="links">
+    <a href="http://127.0.0.1:8000/">Home</a>
+    <a href="http://127.0.0.1:8000/app2/electronics">Electronic</a>
+    <a href="http://127.0.0.1:8000/app3/sports">sports</a>
+    <a href="http://127.0.0.1:8000/app4/fashion">fashion</a>
+    <a href="http://127.0.0.1:8000/app5/movies">movies</a>
+    <a href="http://127.0.0.1:8000/about/">about</a>
+{% endif %}
+</nav>
